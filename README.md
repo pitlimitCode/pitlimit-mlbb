@@ -29,8 +29,8 @@ coming soon output expect:
 -items most used
 
 
-git add filename
-git commit -m "my message"
+git add -A
+git commit -m "__your_message__"
 git push
 
 
