@@ -13,10 +13,9 @@ export default function Home() {
 
       <main className={styles.main}>
 
-        <table className="table table-bordered border-primary">
+        <table className="table table-bordered border-dark">
           <thead>
             <tr>
-              <th scope="col">LANE</th>
               <th scope="col">Exp</th>
               <th scope="col">Jungler</th>
               <th scope="col">Mid</th>
@@ -26,43 +25,38 @@ export default function Home() {
           </thead>
           <tbody>
             <tr>
-              <th scope="row">1</th>
-              <td>Phoveus </td>
-              <td>Terizla </td>
-              <td>Gloo </td>
-              <td>Paquito </td>
-              <td>Fredrinn</td>
-            </tr>
-            <tr>
-              <th scope="row">2</th>
-              <td>Ling </td>
-              <td>Leomord </td>
-              <td>Aldous </td>
-              <td>Harith </td>
-              <td>Fanny</td>
-            </tr>
-            <tr>
-              <th scope="row">3</th>
+              <td>Phoveus</td>
+              <td>Ling</td>
               <td>Faramis</td>
-              <td>Valentina</td>
-              <td>Gussion</td>
-              <td>Yve</td>
-              <td>Pharsa</td>
-            </tr>
-            <tr>
-              <th scope="row">4</th>
               <td>Lolita</td>
-              <td>Grock</td>
-              <td>Diggie</td>
-              <td>Chou</td>
-              <td>Atlas</td>
+              <td>Wanwan</td>
             </tr>
             <tr>
-              <th scope="row">5</th>
-              <td>Wanwan</td>
+              <td>Terizla</td>
+              <td>Leomord</td>
+              <td>Valentina</td>
+              <td>Grock</td>
               <td>Beatrix</td>
+            </tr>
+            <tr>
+              <td>Gloo</td>
+              <td>Aldous</td>
+              <td>Gussion</td>
+              <td>Diggie</td>
               <td>Kimmy</td>
+            </tr>
+            <tr>
+              <td>Paquito</td>
+              <td>Harith</td>
+              <td>Yve</td>
+              <td>Chou</td>
               <td>Irithel</td>
+            </tr>
+            <tr>
+              <td>Fredrinn</td>
+              <td>Fanny</td>
+              <td>Pharsa</td>
+              <td>Atlas</td>
               <td>Clint</td>
             </tr>
           </tbody>
