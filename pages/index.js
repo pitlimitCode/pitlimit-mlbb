@@ -70,7 +70,7 @@ export default function Home() {
 
         <br/>
         <div>Update: 01 November 2022</div>
-        <div>GitHub Website Creator: <a href='https://github.com/pitlimitCode' target="_blank">PitLimitCode</a></div>
+        <div>GitHub Website Creator: <a href='https://github.com/pitlimitCode' target="_blank" rel="noopener noreferrer">PitLimitCode</a></div>
 
       </main>
 
