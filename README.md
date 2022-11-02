@@ -1,42 +1,32 @@
 
-input
+
+upload website dan IG tiap jumat, karena player rame di sabtu minggu
+
+input:
 time update
-
 hierarchy:
-ban >= 50 %
-win >= 60 %
-min 1 most popular each role
-win-end
+  ban >= 50 %
+  win >= 60 %
+  min 1 most popular each role
+  win-end
 
-
-output expect:
-5 hero each role
-6 hero most banned
-
-
-2022-10-30
-exp: phoveus terizla gloo paquito fredrinn
-jungler: ling leomord aldous harith fanny
-mid: faramis valentina gussion yve pharsa
-roam: lolita grock diggie chou atlas
-gold: wanwan beatrix kimmy irithel clint
-
-
-coming soon output priority :
--ig dgn email terbaru(untuk promosi dan dokumentasi progres website tiap waktu)
+priority :
 -server site hero update:
   json.parse json.stringify,
-  1 table: id, json_data? (max length?), date (YYYY-MM-DD), time (can null) | date for client web | time for documentatio
+  1 table: id, json_data? (max length?), date (YYYY-MM-DD), time (can null) | date for client web | time for documentation
 
 coming soon output other:
+-6 hero most banned
 -hero image circle
 -spell most used
 -emblem most used
 -items most used
 
+coming soon coding:
+npm run custom for quick deploy updated
 
 
-git branch
+git branch #make sure on branch 
 git add -A
 git commit -m "__your_message__"
 git push
@@ -50,7 +40,7 @@ Run the development local server:
 npm run dev
 ```
 
-row table on HTML:
+looping row table on HTML:
 <tr key=data.id[n]>
   <td>data.exp[n]</td>
   <td>data.jungler[n]</td>
@@ -61,13 +51,13 @@ row table on HTML:
 
 json prototype  *still need revision. butuh id, 
 {
-  id: [ 1,2,3,4,5 ],
+  id: [ 0,1,2,3,4 ],
   exp: [
+    exp0,
     exp1,
     exp2,
     exp3,
-    exp4,
-    exp5
+    exp4
   ],
   jungler: [ ... ],
   mid: [ ... ],
