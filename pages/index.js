@@ -1,84 +1,66 @@
 import Head from 'next/head'
+import Link from 'next/link'
 // import Image from 'next/image'
 import styles from '../styles/Home.module.css'
 
-export default function Home() {
+import {heroesRank, date} from '../api/datas'
+
+export default function Home(content) {
+  // console.log(content)
+  // const datas123 = content.example;
+  // console.log(date)
+  
   return (
-    <div className={styles.container}>
-      <Head>
-        <title>Pit Limit MLBB</title>
-        <meta name="description" content="MLBB Hero Pick Recommendation"/>
-        <link rel="icon" href="/favicon.ico" />
-      </Head>
+  <div className={styles.container}>
+    <Head>
+      <title>Pit Limit MLBB</title>
+      <meta name="description" content="MLBB Hero Pick Recommendation"/>
+      <link rel="icon" href="/favicon.ico" />
+    </Head>
 
-      <main className={styles.main}>
+    <header className={styles.header}>
+      <h1 className={styles.titleText}>Top 5 MLBB Heroes each Role</h1>
+    </header>
+    <main className={styles.main}>
 
-        <table className="table table-bordered border-primary">
-          <thead>
-            <tr>
-              <th scope="col">LANE</th>
-              <th scope="col">Exp</th>
-              <th scope="col">Jungler</th>
-              <th scope="col">Mid</th>
-              <th scope="col">Roamer</th>
-              <th scope="col">Gold</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <th scope="row">1</th>
-              <td>Phoveus </td>
-              <td>Terizla </td>
-              <td>Gloo </td>
-              <td>Paquito </td>
-              <td>Fredrinn</td>
-            </tr>
-            <tr>
-              <th scope="row">2</th>
-              <td>Ling </td>
-              <td>Leomord </td>
-              <td>Aldous </td>
-              <td>Harith </td>
-              <td>Fanny</td>
-            </tr>
-            <tr>
-              <th scope="row">3</th>
-              <td>Faramis</td>
-              <td>Valentina</td>
-              <td>Gussion</td>
-              <td>Yve</td>
-              <td>Pharsa</td>
-            </tr>
-            <tr>
-              <th scope="row">4</th>
-              <td>Lolita</td>
-              <td>Grock</td>
-              <td>Diggie</td>
-              <td>Chou</td>
-              <td>Atlas</td>
-            </tr>
-            <tr>
-              <th scope="row">5</th>
-              <td>Wanwan</td>
-              <td>Beatrix</td>
-              <td>Kimmy</td>
-              <td>Irithel</td>
-              <td>Clint</td>
-            </tr>
-          </tbody>
-        </table>
+      <div className={styles.updateText}>Update: {date}</div>
 
         <br/>
         <div>Update: 01 November 2022</div>
         <div>GitHub Website Creator: <a href='https://github.com/pitlimitCode' target="_blank" rel="noopener noreferrer">PitLimitCode</a></div>
 
-      </main>
+      <table className="table table-bordered" style={{borderColor: '#F2A154'}}>
+        <thead>
+          <tr className='text-center'>
+            {/* <th scope="col">Exp</th> */}
+            <th>Exp</th>
+            <th>Jungler</th>
+            <th>Mid</th>
+            <th>Roamer</th>
+            <th>Gold</th>
+          </tr>
+        </thead>
+        <tbody>
+          {heroesRank.map(data => (
+            <tr key={data.row}>
+              <td>{data.exp}</td>
+              <td>{data.jungler}</td>
+              <td>{data.mid}</td>
+              <td>{data.roamer}</td>
+              <td>{data.gold}</td>
+            </tr>
+          ))}
+        </tbody>
+      </table>
 
-      {/* <footer className={styles.footer}>
-        <a href='https://github.com/pitlimitCode' target="_blank">WebSite Creator</a>
-        <a href='https://m.mobilelegends.com/id/rank' target="_blank">Algoritma References</a>
-      </footer> */}
+    </main>
 
-    </div>
+    <footer className={styles.footer}>
+      {/* GitHub Website Creator:<span style={{color:'white'}}>_</span><span><Link href='https://github.com/pitlimitCode' target="_blank" rel="noopener noreferrer" style={{textDecoration: 'none'}}>PitLimitCode</Link></span> */}
+      <Link href='https://www.instagram.com/pitlimitmlbb' target="_blank" rel="noopener noreferrer" className={styles.link}>Instagram</Link>
+      <Link href='https://github.com/pitlimitCode' target="_blank" rel="noopener noreferrer" className={styles.link}>GitHub</Link>
+    </footer>
+
+  </div>
   )
 }

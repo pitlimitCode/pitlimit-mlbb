@@ -2,10 +2,15 @@ html,
 body {
   padding: 0;
   margin: 0;
+  /* background: #E7E6E1; */
   font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
     Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
 }
 
+Link {
+  color: inherit;
+  text-decoration: none;
+}
 a {
   color: inherit;
   text-decoration: none;
@@ -13,14 +18,24 @@ a {
 
 * {
   box-sizing: border-box;
+  color: #314E52;
 }
 
-@media (prefers-color-scheme: dark) {
+/* @media (prefers-color-scheme: dark) {
   html {
     color-scheme: dark;
   }
-  body {
-    color: white;
-    background: black;
+  body { */
+    /* color: white;
+    background: black; */
+    /* color: #314E52;
+    background: #E7E6E1;
   }
-}
+} */
+
+/* 
+#E7E6E1
+#F7F6E7
+#F2A154
+#314E52 
+*/
