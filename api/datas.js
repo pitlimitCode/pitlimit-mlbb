@@ -1,5 +1,5 @@
 
-const date = '01 November 2022'
+const date = '03 November 2022'
 
 const heroesRank = 
 [
