@@ -49,22 +49,6 @@ looping row table on HTML:
   <td>data.gold[n]</td>
 </tr>
 
-json prototype  *still need revision. butuh id, 
-{
-  id: [ 0,1,2,3,4 ],
-  exp: [
-    exp0,
-    exp1,
-    exp2,
-    exp3,
-    exp4
-  ],
-  jungler: [ ... ],
-  mid: [ ... ],
-  roamer: [ ... ],
-  gold: [ ... ]
-}
-
 
 VISI & MISSION:
 Visi:
