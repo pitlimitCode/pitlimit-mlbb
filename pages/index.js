@@ -26,7 +26,7 @@ export default function Home(content) {
       <div className={styles.updateText}>Update: {date}</div>
 
         <br/>
-        <div>Update: 01 November 2022</div>
+        <div>Update: 03 November 2022</div>
         <div>GitHub Website Creator: <a href='https://github.com/pitlimitCode' target="_blank" rel="noopener noreferrer">PitLimitCode</a></div>
 
       <table className="table table-bordered" style={{borderColor: '#F2A154'}}>
