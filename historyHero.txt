@@ -5,6 +5,13 @@ console.log("stringfy: ", tes1);
 const tes2 = (JSON.parse(tes1));
 console.log("parse: ", tes2);
 
+06 November 2022
+exp: phoveus, paquito, argus, terizla, gloo
+jungler: martis, valentina, leomord, aamon, aldous
+mid: faramis, gusion, yve, pharsa, lunox
+roam: lolita, chou, diggie, grock, carmilla
+gold: wanwan, beatrix, yi sun-shin, kimmy, clint
+
 2022-11-03
 exp: Phoveus, Terizla, Alice, Gloo, Argus
 jungler: Martis, Paquito, Fredrinn, Leomord, Aamon
@@ -19,47 +26,47 @@ mid: faramis valentina gussion yve pharsa
 roam: lolita grock diggie chou atlas
 gold: wanwan beatrix kimmy irithel clint
 
+2022-11-06
 const heroesRank = 
 [
   {
     row: 1,
-    exp: "Phoveus",
-    jungler: "Martis",
-    mid: "Faramis",
-    roamer: "Diggie",
-    gold: "Wanwan",
+    exp: "phoveus",
+    jungler: "martis",
+    mid: "faramis",
+    roamer: "lolita",
+    gold: "wanwan",
   },
   {
     row: 2,
-    exp: "Terizla",
-    jungler: "Paquito",
-    mid: "Valentina",
-    roamer: "Chou",
-    gold: "Beatrix",
+    exp: "paquito",
+    jungler: "valentina",
+    mid: "gusion",
+    roamer: "chou",
+    gold: "beatrix",
   },
   {
     row: 3,
-    exp: "Alice",
-    jungler: "Fredrinn",
-    mid: "Gussion",
-    roamer: "Lolita",
-    gold: "Clint",
+    exp: "argus",
+    jungler: "leomord",
+    mid: "yve",
+    roamer: "diggie",
+    gold: "yi sun-shin",
   },
   {
     row: 4,
-    exp: "Gloo",
-    jungler: "Leomord",
-    mid: "Yve",
-    roamer: "Grock",
-    gold: "Kimmy",
+    exp: "terizla",
+    jungler: "aamon",
+    mid: "pharsa",
+    roamer: "grock",
+    gold: "kimmy",
   },
   {
     row: 5,
-    exp: "Argus",
-    jungler: "Aamon",
-    mid: "Pharsa",
-    roamer: "Atlas",
-    gold: "Bruno",
+    exp: "gloo",
+    jungler: "aldous",
+    mid: "lunox",
+    roamer: "carmilla",
+    gold: "clint",
   },
 ]
-

@@ -11,6 +11,7 @@ hierarchy:
   win-end
 
 priority :
+-change or remove favicon logo
 -server site hero update:
   json.parse json.stringify,
   1 table: id, json_data? (max length?), date (YYYY-MM-DD), time (can null) | date for client web | time for documentation
