@@ -1,47 +1,47 @@
 
-const date = '06 November 2022'
+const date = '10 November 2022'
 
 const heroesRank = 
 [
   {
     row: 1,
-    exp: "phoveus",
-    jungler: "martis",
+    exp: "kaja",
+    jungler: "valentina",
     mid: "faramis",
-    roamer: "lolita",
+    roamer: "carmilla",
     gold: "wanwan",
   },
   {
     row: 2,
     exp: "paquito",
-    jungler: "valentina",
+    jungler: "martis",
     mid: "gusion",
-    roamer: "chou",
-    gold: "beatrix",
+    roamer: "lolita",
+    gold: "lesley",
   },
   {
     row: 3,
-    exp: "argus",
+    exp: "phoveus",
     jungler: "leomord",
-    mid: "yve",
-    roamer: "diggie",
-    gold: "yi sun-shin",
-  },
-  {
-    row: 4,
-    exp: "terizla",
-    jungler: "aamon",
     mid: "pharsa",
-    roamer: "grock",
+    roamer: "chou",
     gold: "kimmy",
   },
   {
-    row: 5,
+    row: 4,
     exp: "gloo",
-    jungler: "aldous",
-    mid: "lunox",
-    roamer: "carmilla",
+    jungler: "aulus",
+    mid: "zhask",
+    roamer: "diggie",
     gold: "clint",
+  },
+  {
+    row: 5,
+    exp: "fredrinn",
+    jungler: "lunox",
+    mid: "lylia",
+    roamer: "floryn",
+    gold: "alice",
   },
 ]
 

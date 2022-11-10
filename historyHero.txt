@@ -5,6 +5,57 @@ console.log("stringfy: ", tes1);
 const tes2 = (JSON.parse(tes1));
 console.log("parse: ", tes2);
 
+const heroesRank = 
+[
+  {
+    row: 1,
+    exp: "kaja",
+    jungler: "valentina",
+    mid: "faramis",
+    roamer: "carmilla",
+    gold: "wanwan",
+  },
+  {
+    row: 2,
+    exp: "paquito",
+    jungler: "martis",
+    mid: "gusion",
+    roamer: "lolita",
+    gold: "lesley",
+  },
+  {
+    row: 3,
+    exp: "phoveus",
+    jungler: "leomord",
+    mid: "pharsa",
+    roamer: "chou",
+    gold: "kimmy",
+  },
+  {
+    row: 4,
+    exp: "gloo",
+    jungler: "aulus",
+    mid: "zhask",
+    roamer: "diggie",
+    gold: "clint",
+  },
+  {
+    row: 5,
+    exp: "fredrinn",
+    jungler: "lunox",
+    mid: "lylia",
+    roamer: "floryn",
+    gold: "alice",
+  },
+]
+
+10 November 2022
+exp: kaja, paquito, phoveus, gloo, fredrinn
+jungler: valentina, martis, leomord, aulus, lunox
+mid: faramis, gusion, pharsa, zhask, lylia
+roam: carmilla, lolita, chou, diggie, floryn
+gold: wanwan, lesley, kimmy, clint, alice
+
 06 November 2022
 exp: phoveus, paquito, argus, terizla, gloo
 jungler: martis, valentina, leomord, aamon, aldous
@@ -25,48 +76,3 @@ jungler: ling leomord aldous harith fanny
 mid: faramis valentina gussion yve pharsa
 roam: lolita grock diggie chou atlas
 gold: wanwan beatrix kimmy irithel clint
-
-2022-11-06
-const heroesRank = 
-[
-  {
-    row: 1,
-    exp: "phoveus",
-    jungler: "martis",
-    mid: "faramis",
-    roamer: "lolita",
-    gold: "wanwan",
-  },
-  {
-    row: 2,
-    exp: "paquito",
-    jungler: "valentina",
-    mid: "gusion",
-    roamer: "chou",
-    gold: "beatrix",
-  },
-  {
-    row: 3,
-    exp: "argus",
-    jungler: "leomord",
-    mid: "yve",
-    roamer: "diggie",
-    gold: "yi sun-shin",
-  },
-  {
-    row: 4,
-    exp: "terizla",
-    jungler: "aamon",
-    mid: "pharsa",
-    roamer: "grock",
-    gold: "kimmy",
-  },
-  {
-    row: 5,
-    exp: "gloo",
-    jungler: "aldous",
-    mid: "lunox",
-    roamer: "carmilla",
-    gold: "clint",
-  },
-]
