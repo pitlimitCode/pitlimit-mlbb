@@ -39,11 +39,11 @@ export default function Home(content) {
         <tbody>
           {heroesRank.map(data => (
             <tr key={data.row}>
-              <td>{data.exp}</td>
-              <td>{data.jungler}</td>
-              <td>{data.mid}</td>
-              <td>{data.roamer}</td>
-              <td>{data.gold}</td>
+              <td className={styles.firstLetter}>{data.exp}</td>
+              <td className={styles.firstLetter}>{data.jungler}</td>
+              <td className={styles.firstLetter}>{data.mid}</td>
+              <td className={styles.firstLetter}>{data.roamer}</td>
+              <td className={styles.firstLetter}>{data.gold}</td>
             </tr>
           ))}
         </tbody>

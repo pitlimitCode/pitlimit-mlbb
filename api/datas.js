@@ -1,48 +1,85 @@
+const row1 = []; const row2 = []; const row3 = []; const row4 = []; const row5 = [];
+
 
 const date = '10 November 2022'
+
+row1.push("argus")
+row1.push("phoveus")
+row1.push("terizla")
+row1.push("gloo")
+row1.push("fredrinn")
+
+row2.push("leomord")
+row2.push("aulus")
+row2.push("baxia")
+row2.push("martis")
+row2.push("barats")
+
+row3.push("zhask")
+row3.push("kagura")
+row3.push("change")
+row3.push("lylia")
+row3.push("gord")
+
+row4.push("kaja")
+row4.push("carmilla")
+row4.push("lolita")
+row4.push("floryn")
+row4.push("belerick")
+
+row5.push("wanwan")
+row5.push("kimmy")
+row5.push("irithel")
+row5.push("clint")
+row5.push("melissa")
 
 const heroesRank = 
 [
   {
     row: 1,
-    exp: "kaja",
-    jungler: "valentina",
-    mid: "faramis",
-    roamer: "carmilla",
-    gold: "wanwan",
+    exp: row1[0],
+    jungler: row2[0],
+    mid: row3[0],
+    roamer: row4[0],
+    gold: row5[0],
   },
   {
     row: 2,
-    exp: "paquito",
-    jungler: "martis",
-    mid: "gusion",
-    roamer: "lolita",
-    gold: "lesley",
+    exp: row1[1],
+    jungler: row2[1],
+    mid: row3[1],
+    roamer: row4[1],
+    gold: row5[1],
   },
   {
     row: 3,
-    exp: "phoveus",
-    jungler: "leomord",
-    mid: "pharsa",
-    roamer: "chou",
-    gold: "kimmy",
+    exp: row1[2],
+    jungler: row2[2],
+    mid: row3[2],
+    roamer: row4[2],
+    gold: row5[2],
   },
   {
     row: 4,
-    exp: "gloo",
-    jungler: "aulus",
-    mid: "zhask",
-    roamer: "diggie",
-    gold: "clint",
+    exp: row1[3],
+    jungler: row2[3],
+    mid: row3[3],
+    roamer: row4[3],
+    gold: row5[3],
   },
   {
     row: 5,
-    exp: "fredrinn",
-    jungler: "lunox",
-    mid: "lylia",
-    roamer: "floryn",
-    gold: "alice",
+    exp: row1[4],
+    jungler: row2[4],
+    mid: row3[4],
+    roamer: row4[4],
+    gold: row5[4],
   },
 ]
+// console.log("heroesRank: ", heroesRank);
+// const tes1 = (JSON.stringify(heroesRank));
+// console.log("stringfy: ", tes1);
+// const tes2 = (JSON.parse(tes1));
+// console.log("parse: ", tes2);
 
 export {heroesRank, date}

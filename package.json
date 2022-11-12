@@ -6,7 +6,9 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "premsg": "git branch && git add -A",
+    "pramsg": "git push && git checkout main && git merge origin/developing && git checkout developing && git branch"
   },
   "dependencies": {
     "@vercel/analytics": "^0.1.3",

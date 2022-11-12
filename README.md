@@ -1,7 +1,4 @@
 
-
-upload website dan IG tiap jumat, karena player rame di sabtu minggu
-
 input:
 time update
 hierarchy:
@@ -23,10 +20,6 @@ coming soon output other:
 -emblem most used
 -items most used
 
-coming soon coding:
-npm run custom for quick deploy updated
-
-
 git branch #make sure on branch 
 git add -A
 git commit -m "__your_message__"
@@ -35,6 +28,12 @@ git checkout main
 git merge origin/developing
 git checkout developing
 git branch #again
+vercel: promote to production
+
+npm run premsg
+git commit -m "__your_message__"
+npm run pramsg
+vercel: promote to production
 
 Run the development local server:
 ```bash

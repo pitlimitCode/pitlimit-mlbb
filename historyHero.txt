@@ -1,60 +1,51 @@
 
-console.log("heroesRank: ", heroesRank);
-const tes1 = (JSON.stringify(heroesRank));
-console.log("stringfy: ", tes1);
-const tes2 = (JSON.parse(tes1));
-console.log("parse: ", tes2);
+const date = '12 November 2022'
+  win >= 60 %
+  min 1 most popular each role
+  win-end
+exp: 
+jungler: 
+mid: 
+roam:
+gold:
 
-const heroesRank = 
-[
-  {
-    row: 1,
-    exp: "kaja",
-    jungler: "valentina",
-    mid: "faramis",
-    roamer: "carmilla",
-    gold: "wanwan",
-  },
-  {
-    row: 2,
-    exp: "paquito",
-    jungler: "martis",
-    mid: "gusion",
-    roamer: "lolita",
-    gold: "lesley",
-  },
-  {
-    row: 3,
-    exp: "phoveus",
-    jungler: "leomord",
-    mid: "pharsa",
-    roamer: "chou",
-    gold: "kimmy",
-  },
-  {
-    row: 4,
-    exp: "gloo",
-    jungler: "aulus",
-    mid: "zhask",
-    roamer: "diggie",
-    gold: "clint",
-  },
-  {
-    row: 5,
-    exp: "fredrinn",
-    jungler: "lunox",
-    mid: "lylia",
-    roamer: "floryn",
-    gold: "alice",
-  },
-]
+argus
+phoveus
+terizla
+gloo
+fredrinn
 
-10 November 2022
-exp: kaja, paquito, phoveus, gloo, fredrinn
-jungler: valentina, martis, leomord, aulus, lunox
-mid: faramis, gusion, pharsa, zhask, lylia
-roam: carmilla, lolita, chou, diggie, floryn
-gold: wanwan, lesley, kimmy, clint, alice
+leomord
+aulus
+baxia
+martis
+barats
+
+zhask
+kagura
+change
+lylia
+gord
+
+kaja
+carmilla
+lolita
+floryn
+belerick
+
+wanwan
+kimmy
+irithel
+clint
+melissa
+
+
+const date = '10 November 2022'
+const row1 = ["kaja", "paquito", "phoveus", "gloo", "fredrinn"];
+const row2 = ["valentina", "martis", "leomord", "aulus", "lunox"];
+const row3 = ["faramis", "gusion", "pharsa", "zhask", "lylia"];
+const row4 = ["carmilla", "lolita", "chou", "diggie", "floryn"];
+const row5 = ["wanwan", "lesley", "kimmy", "clint", "alice"];
 
 06 November 2022
 exp: phoveus, paquito, argus, terizla, gloo
