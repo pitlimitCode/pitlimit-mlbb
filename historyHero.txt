@@ -1,44 +1,11 @@
 
-const date = '12 November 2022'
-  win >= 60 %
-  min 1 most popular each role
-  win-end
-exp: 
-jungler: 
-mid: 
-roam:
-gold:
 
-argus
-phoveus
-terizla
-gloo
-fredrinn
-
-leomord
-aulus
-baxia
-martis
-barats
-
-zhask
-kagura
-change
-lylia
-gord
-
-kaja
-carmilla
-lolita
-floryn
-belerick
-
-wanwan
-kimmy
-irithel
-clint
-melissa
-
+12 November 2022
+argus, phoveus, terizla, gloo, fredrinn
+leomord, aulus, baxia, martis, barats
+zhask, kagura, change, lylia, gord
+kaja, carmilla, lolita, floryn, belerick
+wanwan, kimmy, irithel, clint, melissa
 
 const date = '10 November 2022'
 const row1 = ["kaja", "paquito", "phoveus", "gloo", "fredrinn"];

@@ -35,6 +35,9 @@ git commit -m "__your_message__"
 npm run pramsg
 vercel: promote to production
 
+npm run vercel
+vercel: promote to production
+
 Run the development local server:
 ```bash
 npm run dev
