@@ -2,6 +2,7 @@
 input:
 time update
 hierarchy:
+  (mythic 400+ point)
   ban >= 50 %
   win >= 60 %
   min 1 most popular each role
