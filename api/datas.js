@@ -1,13 +1,13 @@
 const row1 = []; const row2 = []; const row3 = []; const row4 = []; const row5 = [];
 
 
-const date = '19 November 2022'
+const date = '22 November 2022'
 
+row1.push("joy")
 row1.push("fredrinn")
-row1.push("phoveus")
+row1.push("gloo")
 row1.push("argus")
-row1.push("badang")
-row1.push("terizla")
+row1.push("phoveus")
 
 row2.push("martis")
 row2.push("leomord")
