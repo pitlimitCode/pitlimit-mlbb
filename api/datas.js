@@ -1,28 +1,28 @@
 const row1 = []; const row2 = []; const row3 = []; const row4 = []; const row5 = [];
 
 
-const date = '22 November 2022'
+const date = '26 November 2022'
 
 row1.push("joy")
 row1.push("fredrinn")
-row1.push("gloo")
+row1.push("badang")
 row1.push("argus")
 row1.push("phoveus")
 
 row2.push("martis")
 row2.push("leomord")
-row2.push("ling")
+row2.push("kaja")
 row2.push("aulus")
-row2.push("sun")
+row2.push("aldous")
 
-row3.push("valentina")
 row3.push("gusion")
 row3.push("yve")
 row3.push("zhask")
+row3.push("lylia")
 row3.push("lunox")
 
-row4.push("kaja")
 row4.push("chou")
+row4.push("kaja")
 row4.push("carmilla")
 row4.push("lolita")
 row4.push("diggie")
