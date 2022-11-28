@@ -22,10 +22,10 @@ row3.push("lylia")
 row3.push("lunox")
 
 row4.push("chou")
-row4.push("kaja")
 row4.push("carmilla")
 row4.push("lolita")
 row4.push("diggie")
+row4.push("floryn")
 
 row5.push("wanwan")
 row5.push("lesley")
