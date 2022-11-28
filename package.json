@@ -9,7 +9,7 @@
     "lint": "next lint",
     "premsg": "git branch && git add -A",
     "pramsg": "git push && git checkout main && git merge origin/developing && git checkout developing && git branch",
-    "vercel": "git branch && git add -A && git commit -m 'quickRun' && git push && git checkout main && git merge origin/developing && git checkout developing && git branch"
+    "vercel": "git branch && git add -A && git commit -m 'quickRun' && git push && git checkout main && git merge origin/developing && git push && git checkout developing && git branch"
   },
   "dependencies": {
     "@vercel/analytics": "^0.1.3",

@@ -3,7 +3,7 @@ const row1 = []; const row2 = []; const row3 = []; const row4 = []; const row5 =
 
 const date = '26 November 2022'
 
-row1.push("joy")
+row1.push("joy - New")
 row1.push("fredrinn")
 row1.push("badang")
 row1.push("argus")
