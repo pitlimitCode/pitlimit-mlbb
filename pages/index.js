@@ -5,7 +5,7 @@ import styles from '../styles/Home.module.css'
 // import {heroesRank, date} from '../api/datas'
 
 export async function getServerSideProps(context) {
-  const res = await fetch(`http://localhost:8000/users/lastdata`)
+  const res = await fetch(`https://pitlimit-mlbb-be-production.up.railway.app/users/lastdata`)
   const data = await res.json()
   if (!data) { return { notFound: true } }
   return {  props: { data } }
@@ -57,6 +57,9 @@ export default function Home(context) {
           ))}
         </tbody>
       </table>
+      <Link href='https://m.mobilelegends.com/id/rank' target="_blank" rel="noopener noreferrer" className={styles.link}>
+        source
+      </Link>
 
     </main>
 

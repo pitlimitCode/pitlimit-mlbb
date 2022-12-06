@@ -21,6 +21,13 @@ a {
   color: #314E52;
 }
 
+#tdBody{
+  display: flex;
+  /* flex: 1; */
+  justify-content: center;
+  align-items: center;
+}
+
 /* @media (prefers-color-scheme: dark) {
   html {
     color-scheme: dark;

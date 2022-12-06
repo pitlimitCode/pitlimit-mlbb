@@ -1,8 +1,10 @@
 import axios from 'axios';
 import {useState} from 'react';
+import Router from 'next/router';
+import styles from '../styles/Home.module.css'
 
 export default function Update() {
-  const datas = (JSON.parse(context.data[0].herojson));
+  // const datas = (JSON.parse(context.data[0].herojson));
   // console.log(datas)
   // console.log(datas[0])
   // console.log(datas[0].exp)
@@ -98,28 +100,31 @@ export default function Update() {
   const tes1 = (JSON.stringify(heroesRank));
 
   const handleSubmit = (e) => {
-    axios.post('http://localhost:8000/users', {
+    axios.post('https://pitlimit-mlbb-be-production.up.railway.app/users', {
       herojson: tes1
     })
-      .then(function (response) { console.log(response); })
+      .then(function (response) { 
+        // console.log(response); 
+        Router.push('/')
+      })
       .catch(function (error) { console.log(error); 
         });
     e.preventDefault();
   };
+  
+  const goHome = (e) => {
+    Router.push('/')
+  }
 
   return(
     <>
       
       <form onSubmit={(e) => handleSubmit(e)}>
 
-        <table className="table table-bordered" style={{borderColor: '#F2A154'}}>
+        <table className="table table-bordered text-center" style={{borderColor: '#F2A154'}}>
           <thead>
-            <tr className='text-center'>
-              <th>Exp</th>
-              <th>Jungler</th>
-              <th>Mid</th>
-              <th>Roamer</th>
-              <th>Gold</th>
+            <tr>
+              <th>Exp</th> <th>Jungler</th> <th>Mid</th> <th>Roamer</th> <th>Gold</th>
             </tr>
           </thead>
           <tbody>
@@ -160,11 +165,14 @@ export default function Update() {
             </tr>
           </tbody>
         </table>
-        <button type="submit">Submit</button>
+        <div className='text-center'><button type="submit">Submit</button></div>
       </form>
 
+      <div className='mt-3'><textarea rows="7" placeholder='note...' style={{width:'100%'}}/></div>
+
+      <div className='text-center'><button onClick={(e) => goHome(e)}>Home</button></div>
       
-      <table className="table table-bordered" style={{borderColor: '#F2A154'}}>
+      {/* <table className="table table-bordered" style={{borderColor: '#F2A154'}}>
         <thead>
           <tr className='text-center'>
             <th>Exp</th>
@@ -187,7 +195,7 @@ export default function Update() {
             ))
           }
         </tbody>
-      </table>
+      </table> */}
 
     </>
   )

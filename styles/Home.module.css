@@ -46,6 +46,13 @@
   text-transform: capitalize;
 }
 
+.tdBody{
+  display: flex;
+  flex: 1;
+  justify-content: center;
+  align-items: center;
+}
+
 .footer {
   /* padding: 0 2rem; */
   min-height: 15vh;
@@ -56,6 +63,15 @@
   justify-content: center;
   align-items: center;
   background: #F7F6E7;
+}
+
+.main .link {
+  display: flex;
+  justify-content: right;
+  align-items: right;
+  flex-grow: 1;
+  color: #F2A154 !important;
+  text-decoration: none;
 }
 
 .footer .link {
