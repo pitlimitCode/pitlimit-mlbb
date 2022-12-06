@@ -9,17 +9,24 @@ hierarchy:
   win-end
 
 priority :
+-env backend site, didn't show in f12 client-side
 -change or remove favicon logo
--server site hero update:
-  json.parse json.stringify,
-  1 table: id, json_data? (max length?), date (YYYY-MM-DD), time (can null) | date for client web | time for documentation
 
-coming soon output other:
--6 hero most banned
--hero image circle
--spell most used
--emblem most used
--items most used
+coming soon output other: 6 hero most banned, hero image circle, spell most used, emblem most used, items most used
+
+Run the development local server:
+```bash
+npm run dev
+```
+
+VISI & MISSION:
+Visi:
+-individual achievement about portofolio nextJS project
+-mlbb player didt confuse to choose hero while not ranked from long time before
+-get minor contribution income from visitor/client/host
+Mission:
+...
+-
 
 git branch #make sure on branch 
 git add -A
@@ -38,30 +45,6 @@ vercel: promote to production
 
 npm run vercel
 vercel: promote to production
-
-Run the development local server:
-```bash
-npm run dev
-```
-
-looping row table on HTML:
-<tr key=data.id[n]>
-  <td>data.exp[n]</td>
-  <td>data.jungler[n]</td>
-  <td>data.mid[n]</td>
-  <td>data.roamer[n]</td>
-  <td>data.gold[n]</td>
-</tr>
-
-
-VISI & MISSION:
-Visi:
--individual achievement about portofolio nextJS project
--mlbb player didt confuse to choose hero while not ranked from long time before
--get minor contribution income from visitor/client/host
-Mission:
-...
--
 
 
 NOTES default dari VERCEL: https://nextjs.org/docs/api-routes/introduction

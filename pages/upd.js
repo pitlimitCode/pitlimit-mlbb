@@ -3,7 +3,12 @@ import {useState} from 'react';
 import Router from 'next/router';
 import styles from '../styles/Home.module.css'
 
-export default function Update() {
+export async function getServerSideProps(context) {
+  const api = process.env.API_MLBB_PL
+  return {  props: { api } }
+}
+
+export default function Update(context) {
   // const datas = (JSON.parse(context.data[0].herojson));
   // console.log(datas)
   // console.log(datas[0])
@@ -100,7 +105,8 @@ export default function Update() {
   const tes1 = (JSON.stringify(heroesRank));
 
   const handleSubmit = (e) => {
-    axios.post('https://pitlimit-mlbb-be-production.up.railway.app/users', {
+    // console.log(`${context.api}/users`);
+    axios.post(`${context.api}/users`, {
       herojson: tes1
     })
       .then(function (response) { 

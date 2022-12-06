@@ -4,8 +4,8 @@ import Link from 'next/link'
 import styles from '../styles/Home.module.css'
 // import {heroesRank, date} from '../api/datas'
 
-export async function getServerSideProps(context) {
-  const res = await fetch(`https://pitlimit-mlbb-be-production.up.railway.app/users/lastdata`)
+export async function getServerSideProps() {
+  const res = await fetch(`${process.env.API_MLBB_PL}/users/lastdata`)
   const data = await res.json()
   if (!data) { return { notFound: true } }
   return {  props: { data } }
@@ -16,7 +16,7 @@ export default function Home(context) {
   // const datas123 = context.example;
   // console.log(date)
   // console.log(context.data[0].date)
-
+  
   const date= context.data[0].date
   const heroesRank = JSON.parse(context.data[0].herojson);
   
@@ -64,7 +64,6 @@ export default function Home(context) {
     </main>
 
     <footer className={styles.footer}>
-      {/* GitHub Website Creator:<span style={{color:'white'}}>_</span><span><Link href='https://github.com/pitlimitCode' target="_blank" rel="noopener noreferrer" style={{textDecoration: 'none'}}>PitLimitCode</Link></span> */}
       <Link href='https://www.instagram.com/pitlimitmlbb' target="_blank" rel="noopener noreferrer" className={styles.link}>Instagram</Link>
       <Link href='https://github.com/pitlimitCode' target="_blank" rel="noopener noreferrer" className={styles.link}>GitHub</Link>
     </footer>
