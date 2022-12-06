@@ -29,7 +29,7 @@ export default function Home(context) {
     </Head>
 
     <header className={styles.header}>
-      <h1 className={styles.titleText}>Top 5 MLBB Heroes each Role</h1>
+      <h1 className={styles.titleText}>Top 5 MLBB Heroes by Role</h1>
     </header>
     <main className={styles.main}>
 
