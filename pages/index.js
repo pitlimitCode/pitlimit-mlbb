@@ -2,13 +2,23 @@ import Head from 'next/head'
 import Link from 'next/link'
 // import Image from 'next/image'
 import styles from '../styles/Home.module.css'
+// import {heroesRank, date} from '../api/datas'
 
-import {heroesRank, date} from '../api/datas'
+export async function getServerSideProps(context) {
+  const res = await fetch(`http://localhost:8000/users/lastdata`)
+  const data = await res.json()
+  if (!data) { return { notFound: true } }
+  return {  props: { data } }
+}
 
-export default function Home(content) {
-  // console.log(content)
-  // const datas123 = content.example;
+export default function Home(context) {
+  // console.log(context)
+  // const datas123 = context.example;
   // console.log(date)
+  // console.log(context.data[0].date)
+
+  const date= context.data[0].date
+  const heroesRank = JSON.parse(context.data[0].herojson);
   
   return (
   <div className={styles.container}>
@@ -28,7 +38,6 @@ export default function Home(content) {
       <table className="table table-bordered" style={{borderColor: '#F2A154'}}>
         <thead>
           <tr className='text-center'>
-            {/* <th scope="col">Exp</th> */}
             <th>Exp</th>
             <th>Jungler</th>
             <th>Mid</th>

@@ -1,5 +1,4 @@
 
-
 12 November 2022
 argus, phoveus, terizla, gloo, fredrinn
 leomord, aulus, baxia, martis, barats
@@ -13,20 +12,6 @@ const row2 = ["valentina", "martis", "leomord", "aulus", "lunox"];
 const row3 = ["faramis", "gusion", "pharsa", "zhask", "lylia"];
 const row4 = ["carmilla", "lolita", "chou", "diggie", "floryn"];
 const row5 = ["wanwan", "lesley", "kimmy", "clint", "alice"];
-
-06 November 2022
-exp: phoveus, paquito, argus, terizla, gloo
-jungler: martis, valentina, leomord, aamon, aldous
-mid: faramis, gusion, yve, pharsa, lunox
-roam: lolita, chou, diggie, grock, carmilla
-gold: wanwan, beatrix, yi sun-shin, kimmy, clint
-
-2022-11-03
-exp: Phoveus, Terizla, Alice, Gloo, Argus
-jungler: Martis, Paquito, Fredrinn, Leomord, Aamon
-mid: Faramis, Valentina, Gussion, Yve, Pharsa
-roam: Diggie, Chou, Lolita, Grock, Atlas
-gold: Wanwan, Beatrix, Clint, Kimmy, Bruno
 
 2022-10-30
 exp: phoveus terizla gloo paquito fredrinn
