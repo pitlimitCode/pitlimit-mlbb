@@ -5,8 +5,9 @@ import styles from '../styles/Home.module.css'
 // import {heroesRank, date} from '../api/datas'
 
 export async function getServerSideProps() {
-  const res = await fetch(`${process.env.API_MLBB_PL}/users/lastdata`)
-  const data = await res.json()
+  const data = await fetch(`${process.env.API_MLBB_PL}/users/lastdata`)
+    .then(res => res.json());
+  // const data = await res.json()
   if (!data) { return { notFound: true } }
   return {  props: { data } }
 }
