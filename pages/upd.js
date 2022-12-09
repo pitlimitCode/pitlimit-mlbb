@@ -4,8 +4,9 @@ import Router from 'next/router';
 import styles from '../styles/Home.module.css'
 
 export async function getServerSideProps(context) {
-  const api = process.env.API_MLBB_PL
-  return {  props: { api } }
+  const api = process.env.API_MLBB_PL;
+  const secretKey = process.env.SECRET_KEY;
+  return {  props: { api, secretKey } }
 }
 
 export default function Update(context) {
@@ -43,6 +44,9 @@ export default function Update(context) {
   const [g2, setg2] = useState();
   const [g3, setg3] = useState();
   const [g4, setg4] = useState();
+  
+  const [wrongKey, setWrongKey] = useState();
+  const [secretKey, setSecretKey] = useState();
 
   const row1 = []; const row2 = []; const row3 = []; const row4 = []; const row5 = [];
 
@@ -105,7 +109,14 @@ export default function Update(context) {
   const tes1 = (JSON.stringify(heroesRank));
 
   const handleSubmit = (e) => {
-    // console.log(`${context.api}/users`);
+    e.preventDefault();
+
+    if(secretKey !== context.secretKey){
+      return setWrongKey('wrong Secret Key');
+    }
+    console.log(wrongKey);
+
+    console.log(`${context.api}/users`);
     axios.post(`${context.api}/users`, {
       herojson: tes1
     })
@@ -115,12 +126,9 @@ export default function Update(context) {
       })
       .catch(function (error) { console.log(error); 
         });
-    e.preventDefault();
   };
   
-  const goHome = (e) => {
-    Router.push('/')
-  }
+  const goHome = (e) => { Router.push('/') }
 
   return(
     <>
@@ -171,12 +179,14 @@ export default function Update(context) {
             </tr>
           </tbody>
         </table>
+        <div className='text-center pb-1'><input type="text" onChange={(e) => setSecretKey(e.target.value)}/></div>
         <div className='text-center'><button type="submit">Submit</button></div>
+        <div className='text-center pb-5'>{wrongKey}</div>
       </form>
 
-      <div className='mt-3'><textarea rows="7" placeholder='note...' style={{width:'100%'}}/></div>
+      {/* <div className='mt-3'><textarea rows="7" placeholder='note...' style={{width:'100%'}}/></div> */}
 
-      <div className='text-center'><button onClick={(e) => goHome(e)}>Home</button></div>
+      <div className='text-center pt-5'><button onClick={(e) => goHome(e)}>Home</button></div>
       
       {/* <table className="table table-bordered" style={{borderColor: '#F2A154'}}>
         <thead>

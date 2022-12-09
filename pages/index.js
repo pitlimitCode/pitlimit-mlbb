@@ -9,7 +9,7 @@ export async function getServerSideProps() {
     .then(res => res.json());
   // const data = await res.json()
   if (!data) { return { notFound: true } }
-  return {  props: { data } }
+  return { props: { data } }
 }
 
 export default function Home(context) {
